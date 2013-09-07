@@ -1,0 +1,19 @@
+{
+    "name": "tangler/imap",
+    "description": "IMAP Module for Tangler",
+    "homepage": "http://www.github.com/Tangler/Imap",
+    "keywords": ["php", "tangler", "imap", "trigger", "email"],
+    "type": "library",
+    "minimum-stability": "dev",
+    "require": {
+        "symfony/console": "2.4.*@dev",
+        "phpunit/phpunit": "3.7.*@dev",
+        "zetacomponents/mail": "dev-master",
+        "tangler/tangler": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Tangler\\": "src/"
+        }
+    }
+}

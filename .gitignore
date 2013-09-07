@@ -1,0 +1,13 @@
+.settings
+.settings.xml
+.metadata
+.buildpath
+.gitignore
+.DS_Store
+vendor/
+build
+tangler.sqlite3
+DEADJOE
+*~
+*.swp
+tags

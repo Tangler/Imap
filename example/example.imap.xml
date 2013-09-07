@@ -1,0 +1,23 @@
+<tangler>
+
+    <channel>
+        <key>email2file</key>
+        <label>Email 2 file</label>
+        <description>It handles incoming email</description>
+
+        <trigger class="Tangler\Module\Imap\NewEmailTrigger">
+            <parameter key="username">username</parameter>
+            <parameter key="password">password</parameter>
+            <parameter key="hostname">imap.example.com</parameter>
+        </trigger>
+
+        <action class="Tangler\Module\File\CreateFileAction">
+            <parameter key="dir">/tmp/demo.out/</parameter>
+            <parameter key="filename">new.{{subject}}.bin</parameter>
+            <parameter key="content">Spotted new email: '{{subject}}'
+{{content}}
+The end</parameter>
+        </action>
+
+    </channel>
+</tangler>
